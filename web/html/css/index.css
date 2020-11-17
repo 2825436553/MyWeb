@@ -1,0 +1,293 @@
+p, div, html, div, img, span {
+    margin: 0;
+    padding: 0;
+}
+
+/* 隐藏滚动条 */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+body {
+    background: #fafafb;
+}
+
+
+.text-grid-title-size {
+    margin-top: 40px;
+}
+
+.text-grid-title-size-one,
+.text-grid-title-size {
+    font-size: 17px;
+    font-weight: bold;
+    color: #595959;
+    display: flex;
+}
+
+
+/*总的*/
+.list-grid-top {
+    /* margin-top: 20px;*/
+}
+
+/*app list 单个的*/
+.list-item-app {
+    /* background-color: #ff5e1e;*/
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/*app 图片*/
+.list-item-app > img {
+    width: 110px;
+    display: block;
+    margin: auto;
+}
+
+/*app 文字*/
+.list-item-app > b {
+    font-size: 16px;
+    color: #595959;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/*app 标签list*/
+.list-item-app > p {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*app 标签*/
+.list-item-app > p > span {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #ff5e1e;
+    padding: 2px 7px 2px 7px;
+    font-size: 12px;
+    border-radius: 0.6rem;
+    white-space: nowrap;
+}
+
+.list-item-app:hover {
+    /*background-color: #c2c2c2;*/
+    transition: 1s;
+    border-radius: 10px;
+    /*padding: 10px;*/
+}
+
+.list-item-app:hover img {
+    transform: scale(1.15, 1.15);
+    transition: 0.5s;
+}
+
+
+/*笔记*/
+.list-item-notes {
+    margin-top: 30px;
+}
+
+/*笔记 单个*/
+.list-item-notes > div {
+    width: 100%  /*210px 更改成固定的*/ ;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.list-item-notes-min > div > div {
+    width: 85%;
+}
+
+/*.list-item-notes-min > div > div > div {
+    height: 180px;
+}*/
+
+
+/*图片*/
+.list-item-notes > div > div {
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+.list-item-notes > div > div > img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.5s;
+    object-fit: cover;
+}
+
+.list-item-notes > div:hover div > img {
+    transform: scale(1.2, 1.2);
+}
+
+
+/*笔记 标题*/
+.list-item-notes > div > b {
+    font-size: 16px;
+    color: #595959;
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/*笔记 标签list*/
+.list-item-notes > div > p {
+    width: 100%;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+
+/*app 标签*/
+.list-item-notes > div > p > span {
+   /* width: 100%;*/
+    text-align: center;
+    color: #fff;
+    background-color: #ff5e1e;
+    padding: 2px 7px 2px 7px;
+    font-size: 12px;
+    border-radius: 0.6rem;
+    white-space: nowrap;
+}
+
+
+/*收藏*/
+.list-item-keep {
+    margin-top: 30px;
+}
+
+.list-keep-min > div > div {
+    width: 90%;
+}
+
+
+.list-item-keep > div {
+    width: 90% /* 210px 改成固定的*/;
+    margin: auto;
+}
+
+.list-item-keep > div:hover {
+    width: 100%;
+    transition: 0.5s;
+}
+
+
+.list-item-keep > div > div {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #4e77bf;
+    line-height: 50px;
+    padding: 5px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+/*收藏 标签list*/
+.list-item-keep > div > p {
+    width: 100%;
+    margin-top: 7px;
+    margin-left: 5px;
+
+}
+
+/*收藏 标签*/
+.list-item-keep > div > p > span {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #ff5e1e;
+    padding: 2px 7px 2px 7px;
+    font-size: 12px;
+    border-radius: 0.6rem;
+    white-space: nowrap;
+
+}
+
+
+.bottom {
+    width: 100%;
+    height: 100px;
+    background: #595959;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    /*font-weight: bold;*/
+    text-align: center;
+    padding-top: 29.2px;
+    /*line-height: 100px;*/
+}
+
+.bottom > p > a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+
+/*笔记 html*/
+.list-item-notes-min-tow > div  > div > div {
+    width: 85%;
+}
+
+
+/*收藏 html*/
+.list-keep-min-img > div  > div  {
+    width: 90%;
+    /*height: max-content;*/
+}
+
+.list-item-keep-emoticons > div{
+    width: 60%;
+    /*height: content-box;*/
+    margin:20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.list-item-keep-emoticons > div > img{
+    width: 100%;
+    /*height: 100%;*/
+    cursor: pointer;
+    transition: 0.5s;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+.list-item-keep-emoticons > div:hover img{
+    transform: scale(1.1,1.1);
+}
+
+
+
+
+
+
+
+
+
+
+

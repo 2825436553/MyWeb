@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ME</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="../css/me.css">
+		<script src="../js/Me.js"></script>
+		<!-- 背景动画 -->
+		<style type="text/css" id="style-bg"></style>
+		<!-- 头像文字动画 -->
+		<style type="text/css" id="style-h-t"></style>
+	</head>
+	<body>
+
+		<div class="mui-content" id="bg">
+			
+			<!-- 标题 -->
+			<nav class="navbar navbar-expand-md navbar-transparent navbar-dark fixed-top" style="background-color: rgba(0,0,0,0.1);">
+				<a class="navbar-brand " style="font-weight: bold" href="../../">Pikachu</a>
+				<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+						<li class="nav-item navbar" style="font-weight: bold"><a class="nav-link" href="app.html">APP</a></li>
+						<li class="nav-item navbar" style="font-weight: bold"><a class="nav-link" href="notes.html">笔记</a></li>
+						<li class="nav-item navbar" style="font-weight: bold"><a class="nav-link" href="collect.html">收藏</a></li>
+						<li class="nav-item navbar active" style="font-weight: bold"><a class="nav-link" href="me.html">ME</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<!-- 左 -->
+			<img src="../src/img/break.png" class="vertical-center-img-l" id="img-l" onclick="imageOnClickLeft()" />
+
+			<!-- 头像 -->
+			<a href="upuser.html" id="radius-border-div"  onmouseover="showA(true)" onmouseout="showA(false)">
+				<img id="image_user" />
+			</a>
+			
+			<!-- 右 -->
+			<img src="../src/img/break_tow.png" class="vertical-center-img-r" id="img-r" onclick="imageOnClickRight()" />
+
+			<!-- 文字 -->
+			<div class="vertical-center-text" id="vertical-center-text-id">
+				<div class="text_onmose" id="user_text_div" onmouseover="showInform(true)" onmouseout="showInform(false)">
+					<p class="text-title" id="user_title_p">—&nbsp;&nbsp;&nbsp;<span id="user_title">PIKACHU</span>&nbsp;&nbsp;&nbsp;—</p>
+					<p class="text-title2" id="user_text"></p>
+					<p class="text-title3" id="user_title_ps" style="display: none;"></p>
+					<p id="user_la" style="display: none; margin-top: -5px;"></p> 
+					<p class="text-title4" id="user_text_s" style="display: none;"></p>
+				</div>
+			</div>
+			
+
+			<!-- 轮播点 -->
+			<ul class="vertical-center-o-list" id="lb_ul">
+				<!-- <li class="o-true" style="margin-left: 0rem;"></li>
+					<li class="o-false"></li>
+					<li class="o-false"></li>
+					<li class="o-false"></li> -->
+			</ul>
+			
+		</div>
+
+
+
+	</body>
+
+	<!-- bgm -->
+	<audio src="" autoplay="autoplay" loop="loop" id="bgm"></audio>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>添加上传-“我”</title>
+		<style type="text/css">
+			body,html{
+				background-color: #fafafa;
+			}
+			div{
+				font-weight: bold;
+				text-align: center;
+				margin-top: 50px;
+				background-color: #ffffff;
+				width: fit-content;
+				margin: auto;
+				padding: 20px 40px 20px 40px;
+				margin-top: 100px;
+				border-radius: 10px;
+				color: #6b6b6b;
+				box-shadow: 4px 4px 10px rgba(0,0,0,0.15);
+				animation: start 2s ;
+				-webkit-animation: start 0.5s ;
+			}
+			
+			div>b,div>font{
+				color: #ff5e1e;
+			}
+			
+			div>font{
+				font-size: 25px;
+			}
+			div>p{
+				font-size: 12px;
+				text-align: right;
+			}
+			@keyframes start{
+				/* from{ margin-top: -300px; }
+				to{ margin-top: 100px;} */
+				from{ margin-top: -300px;  }
+				
+			}
+			@-webkit-keyframes start{
+				from{ -webkit-margin-top: -300px; }
+				to{ -webkit-margin-top: 100px;}
+			}
+			
+	
+			@keyframes start{
+				0%{ transform:translate(0px,0px);}
+				50%{ transform:translate(-1000px,0px);opacity: 0; }
+				51%{ transform:translate(1000px,0px);}
+				100%{ transform:translate(0px,0px); opacity:1;}
+			}
+			
+			
+			
+			
+		</style>
+		
+		<style type="text/css" id="po">
+			
+		</style>
+		
+	</head>
+	<body>
+		<div> <font> 警告！</font><br><br><br>
+		此页面用来上传（你）到网站（ME）分区，任何人都可以查看<br>
+		请勿上传包含<b>个人隐私-政治敏感-暴力血腥-黄赌毒-等非法(音,视,图)。</b> <br>
+		本网站只保存用户上传的数据，一但上传等于您同意公开显示，导致的一切后果(如个人隐私泄露)与<b>本站无关。</b><br>
+		谢谢谅解<br>
+		<p>当前功能维护中...</p>
+		</div>
+		
+		<!-- <div onclick="ko()" id="bo" style="background-color: #FF5E1E;width: 60px;height: 30px;color: #FAFAFA; animation: 0.5s start linear ;"></div>
+		 -->
+		<script>
+			
+			function ko(){
+				var offsetWid = document.documentElement.clientWidth/2;
+				
+				 var gp1=document.getElementById("po");
+				 gp1.innerHTML="@keyframes startp{"+
+					"0%{ transform:translate(0px,0px);}"+
+					"50%{ transform:translate("+offsetWid+"px,0px);opacity: 0; }"+
+					"51%{ transform:translate("+-offsetWid+"px,0px);}"+
+					"100%{ transform:translate(0px,0px); opacity:1;}}";
+				 
+			    var gp=document.getElementById("bo");
+				gp.style.animation="startp 1s";
+				gp.addEventListener("animationend",function(){
+					document.getElementById("bo").style.animation="startp3 2s";
+				});
+			}
+			
+			
+		</script>
+		
+	</body>
+</html>
