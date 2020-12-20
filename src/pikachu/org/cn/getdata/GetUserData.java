@@ -1,5 +1,6 @@
 package pikachu.org.cn.getdata;
 
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,7 +19,6 @@ public class GetUserData extends HttpServlet {
         String mm = req.getParameter("mm");
         resp.setContentType("text/json;charset=UTF-8");
         resp.getWriter().write(mm==null?"{error:\"error->not data\"}":mm);
-
 
     }
 }

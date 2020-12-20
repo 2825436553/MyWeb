@@ -31,6 +31,8 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
+
+
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item navbar" style="font-weight: bold"><a class="nav-link" href="html/activity/app.html">APP</a></li>

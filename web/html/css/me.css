@@ -551,10 +551,11 @@ body,
 	-webkit-transition: 0.5s;
 	-moz-transition: 0.5s;
 	-ms-transition: 0.5s;
+	/* 发光 */
 	box-shadow: 0 0 10px
 		/* #ffc952 */
 		#fff;
-	/* 发光 */
+
 }
 
 /* 圆点鼠标放上动画 选中的 */
